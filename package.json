@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -29,7 +31,8 @@
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "^2.6.14",
+    "husky": "^8.0.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
